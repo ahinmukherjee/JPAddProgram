@@ -1,13 +1,13 @@
 import java.awt.*;
 import javax.swing.*;
 
-public class FramePanelBackground {
+public class ExitButtonShow {
     public static void main(String args[]){
         FrameTest ft= new FrameTest();
         ft.setVisible(true);
-        ft.setDefaultCloseOperation(3);   	
-    } 
-}   
+        ft.setDefaultCloseOperation(3);
+    }	
+} 
     
 class FrameTest extends JFrame{
     public FrameTest(){
@@ -19,15 +19,15 @@ class FrameTest extends JFrame{
         setLocation(w/4, h/4);
         setTitle("Welcome in Frame");
         setResizable(false);
-        FramePanels fp = new FramePanels();
+        FramePanel fp = new FramePanel();
         add(fp);
     }
 } 
     
-class FramePanels extends JPanel{
-    public void paintComponent(Graphics g){
-        super.paintComponent(g);
-        setBackground(Color.yellow);
+class FramePanel extends JPanel{
+       JButton exitButton;
+    public FramePanel(){
+        exitButton = new JButton("Exit");
+        add(exitButton);
     }
-}		
-
+}
