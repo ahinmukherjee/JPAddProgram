@@ -4,14 +4,14 @@ import java.awt.event.*;
 
 public class BackGroundColorChange {
     public static void main(String args[]){
-        FrameSample st= new FrameSample();
+        FrameSamples st= new FrameSamples();
         st.setVisible(true);
         st.setDefaultCloseOperation(3);
     }
 }
 
-class FrameSample extends JFrame{
-	public FrameSample(){
+class FrameSamples extends JFrame{
+	public FrameSamples(){
 	    Toolkit kit =Toolkit.getDefaultToolkit();
 	    Dimension scrsize= kit.getScreenSize();
 	    int w= scrsize.width;
