@@ -15,7 +15,7 @@ class SampleFrame extends JFrame{
 		Dimension scrsize = kit.getScreenSize();
 		int w= scrsize.width;
  		int h= scrsize.height;
-		setSize(300, 500);
+		setSize(300, 500); // width , height
 		setLocation(w/4, h/4);
 		setTitle("Whattsapp frame");
 		setResizable(false);
